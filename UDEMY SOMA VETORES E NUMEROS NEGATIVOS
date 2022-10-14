@@ -1,0 +1,26 @@
+// Programa que leia um número inteiro positivo (No máximo 10) e depois N números inteiros e armazene-os em um vetor. Em seguida mostrar na tela todos os numeros negativos lidos.
+#include <stdio.h>
+
+main (){
+	
+	int n, i;
+	
+	printf ("Quantos numeros voce ira digitar?:\n");
+	scanf ("%d", &n);
+	
+	int vet[n];
+	
+	for (i = 0; i < n; i++){
+		
+		printf ("\nDigite um numero: ");
+		scanf ("%d", &vet[i]);
+	}
+	printf ("\nNUMEROS NEGATIVOS: \n");
+	for (i = 0; i < n; i++){
+		if (vet[i] < 0) {
+			printf ("%d\n", vet[i]);
+		}
+	}
+	
+return 0;
+}
